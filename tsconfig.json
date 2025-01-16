@@ -1,0 +1,16 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+
+  /* jsx: react-jsx moved here from tsconfig.app.json because of --jsx error(test did not pass)*/
+  /* allowImportingTsExtensions moved here from tsconfig.app.json because of '.tsx' extension error(test:cov did not pass)*/
+  /* allowImportingTsExtensions does not work without "noEmit": true in here*/
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  }
+}
